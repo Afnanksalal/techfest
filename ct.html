@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comp events</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   
+  <style>
+    body {
+  /* Existing styles remain the same */
+
+  /* Add the following styles for responsiveness */
+  @media only screen and (max-width: 1500px) {
+    .container {
+      justify-content: center;
+    }
+
+    
+  
+  .back{
+     
+      margin-top: -29px;
+      
+    }
+    .mech h1{
+      margin-top: -50px;
+      font-size: 35px;
+    }
+    
+
+  }
+  @media only screen and (max-width: 300px) {
+    .card {
+      width: 50%;
+      margin: 10px;
+    }
+    .diclaimer{
+    height: 130px;
+    
+  }
+  .dic{
+   padding: -10px;
+  }
+}
+
+    }
+/* Add this style for better header responsiveness */
+header h1 {
+  margin-bottom: 10px;
+}
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #28282B;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+
+    .card {
+      width: 300px;
+      margin: 20px;
+      padding: 15px;
+      background-color: rgb(24, 22, 22);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      transition: transform 0.3s ease-in-out;
+      height: 560px;
+      
+     
+    }
+    .card:hover{
+      box-shadow: 3px 3px 10px rgb(11, 11, 11);
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      border-radius: 4px;
+      
+    }
+
+    .card h2 {
+      margin-top: 10px;
+      font-size: 1.5rem;
+      color: rgb(6, 137, 245);
+      text-align: center;
+      text-transform: uppercase;
+
+    }
+
+    .card p {
+      margin-top: 10px; 
+      font-size: 1rem;
+      
+    }
+    .card a{
+        text-decoration: none;
+        color: rgb(229, 36, 7);
+        text-align: center;
+        display: block;
+    }
+    .card p{
+        color: rgb(246, 243, 243);
+    }
+    .mech{
+        background-image: url('images/comp4.jpg');
+        background-size: cover;
+        height: 150px;
+        justify-content: space-around;
+        color: rgb(241, 239, 242);
+        font-size: 25px;
+        font-family: sans-serif;
+        overflow-y: contain;
+        align-content: center;
+        padding-top: 5%;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 3px solid white;
+        
+    }
+    .mech h1{
+      margin-top: -60px;
+      
+    }
+    .mech p{
+        margin-bottom: 120px;
+        font-size: 20px;
+    }
+    .gear{
+        margin-top: -90px;
+        font-weight: bolder;
+        font-size: 50px;
+        font-family: Cooper;
+        text-shadow: 3px 5px #bd2775;
+    }
+    header{
+        display: flex;
+    }
+    .green{
+      color: green;
+    }
+    .red{
+      color: red;
+    }
+    .back{
+      width: 100px;
+      height: 76px;
+      margin-top: -122px;
+    }
+    .back a button{
+      width: 100px;
+      height: 50px;
+      font-size: 20px;
+      font-family: 'Josefin Sans', sans-serif; 
+      background-color: rgba(255, 255, 255, 0);
+      color: white;
+      border: none;
+    }
+    .back a button i{
+      color: white;
+    }
+    .diclaimer{
+      width: 100%;
+      height: 100px;
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding-top: 4px;
+     
+    }
+    .btt{
+      width: 100%;
+      height: 40px;
+      background-color: black;
+      border-radius: 10px;
+      border: none;
+      box-shadow: 1px 1px 5px white;
+      
+    }
+    .btt a{
+      color: rgb(6, 137, 245);
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+ 
+  <header class="mech">
+    <div class="back">
+      <a href="index.html#about"><button><i class="fa-solid fa-house"></i> HOME</button></a>
+    </div>
+    
+
+    <h1>COMPUTER DEPARTMENT </h1>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <img src="images/projectexp.jpg" alt="">
+      <h2>PROJECT EXPO</h2>
+      <p> <b>Registration fee:</b> ₹50/Head</p>
+      <p> <b>First price:</b>  ₹2500</p>
+      <p> <b>Second price:</b> ₹1500</p>
+      <p> <b>Date & Time:</b> FEBRUARY 29 ,10:00 AM 12:00 PM</p>
+      <p><b>Contact:</b> Jenin P.J -8086701299</p>
+      <p> <b>Venue:</b>S6 CT(118)</p>
+      
+
+      <button class="btt"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdRsZH1z4joxUs-z5ZQ6SvH2wzs5kSaglhYsfqS6FinjaXFHA/viewform?usp=sf_link">REGISTER NOW</a></button>
+    </div>
+
+    <div class="card">
+        <img src="images/brocod.jpg" >
+        <h2>WEB designing</h2>
+            <p><strong class="reg">Registration Fee:</strong> ₹50/Head</p>
+            <p><strong class="prize">First Prize:</strong> ₹2000</p>
+            <p><strong class="prize">Second Prize:</strong> ₹1000</p>
+            <p><strong class="date">DATE & TIME :</strong> FEBRUARY 29, 12:00 PM- 2:00 PM</p>
+            <p><strong>Contact:</strong> Anuja P.R - 8139013382</p>
+            <p><strong>Venue:</strong> Software Lab</p>
+            <button class="btt"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdjS2dSyjHXgDDi19f60Q2-JO_D04QmtqRzYIdrhI559yXMhQ/viewform?usp=sf_link">REGISTER NOW</a></button>
+    </div>
+    <div class="card">
+        <img src="images/quiz.jpg" >
+        <h2>IT QUIZ</h2>
+              <p><strong class="reg">Registration Fee:</strong> ₹50/Head</p>
+              <p><strong class="prize">First Prize:</strong> ₹2000</p>
+              <p><strong class="prize">Second Prize:</strong> ₹1000</p>
+              <p><strong class="date">DATE & TIME :</strong> FEBRUARY 29, 11:00 AM-01:00 PM</p>
+              <p><strong>Contact:</strong> Amal Krishna M S-9745862262</p>
+              <p><strong>Venue:</strong> S2 CT(207)</p>
+              <button class="btt"><a href="https://docs.google.com/forms/d/e/1FAIpQLSerI-LlnYKH9_V3rml5kHapsQ0TwXOJarvy-i1gz0TJXqSVvw/viewform?usp=sf_link">REGISTER NOW</a></button>
+    </div>
+    <div class="card">
+      <img src="images/twist.jpg" >
+      <h2>RUBIK'S cube</h2>
+          <p><strong class="reg">Registration Fee:</strong> ₹50/Head</p>
+          <p><strong class="prize">First Prize:</strong> ₹1500</p>
+          <p><strong class="prize">Second Prize:</strong> ₹500</p>
+          <p><strong class="date">DATE & TIME :</strong> March 1, 01:00 PM-03:00 PM</p>
+          <p><strong>Contact:</strong>Vijith K V - 8590522667</p>
+          <p><strong>Venue:</strong>S2 CT(207)</p>
+
+          <button class="btt"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdNeiJKCqf1BYzWfRyqTd-pIERK-H7TEjis08OcHwm74Ll3qA/viewform?usp=sf_link">REGISTER NOW</a></button>
+    </div>
+      <div class="card">
+        <img src="images/acution.jpg" >
+        <h2>IPL auction</h2>
+            <p><strong class="reg">Registration Fee:</strong> ₹250</p>
+            <p><strong class="prize">First Prize:</strong> ₹2500</p>
+            <p><strong class="prize">Second Prize:</strong> ₹1500</p>
+            <p><strong class="date">DATE & TIME :</strong> MARCH 01, 09:00 AM-11:00 AM</p>
+            <p><strong>Contact:</strong>John Thomas P-8943896355</p>
+            <p><strong>Venue:</strong>CCF Lab</p>
+  
+            <button class="btt"><a href="https://docs.google.com/forms/d/e/1FAIpQLSehZwhuCOepeo5JWAKwBzT0AeJib2bRGO9uyx-TeB4gt2t56Q/viewform?usp=sf_link">REGISTER NOW</a></button>
+      </div>
+      <div class="card">
+        <img src="images/VR.jpg" >
+        <h2>gaming</h2>
+            <p><strong class="reg">Registration Fee:</strong> ₹100</p>
+            <p><strong class="prize">First Prize:</strong> ₹2000</p>
+            <p><strong class="prize">Second Prize:</strong> ₹1000</p>
+            <p><strong class="date">DATE & TIME :</strong>MARCH 01, 10:00 AM-12:00 PM</p>
+            <p><strong>Contact:</strong>Antony A F- 7306982904</p>
+            <p><strong>Venue:</strong>Software Lab</p>
+  
+            <button class="btt"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfxxcAg6H7dynsq-aOFb2AkFZ4CRXGpyEFMBcwda0gSxqZHsw/viewform?usp=sf_link">REGISTER NOW</a></button>
+      </div>
+      <div class="card">
+        <img src="images/hack1.jpg" >
+        <h2>hackathon</h2>
+            <p><strong class="reg">Registration Fee:</strong> ₹50/Head</p>
+            <p><strong class="prize">First Prize:</strong> ₹2000</p>
+            <p><strong class="prize">Second Prize:</strong> ₹1000</p>
+            <p><strong class="date">DATE & TIME :</strong>MARCH 01, 09:00 AM-12:00 PM</p>
+            <p><strong>Contact:</strong> Binsam Mohammed- 9188108851</p>
+            <p><strong>Venue:</strong>CEC Seminar hall</p>
+  
+            <button class="btt"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdxXGZvl780yZUR9vOwC6FKsBegRtNQFlpLVbOsZgYGYh4bKQ/viewform?usp=sf_link">REGISTER NOW</a></button>
+      </div>
+      <div class="card">
+        <img src="images/type.jpg" >
+        <h2>speed typing</h2>
+            <p><strong class="reg">Registration Fee:</strong> ₹50/Head</p>
+            <p><strong class="prize">First Prize:</strong> ₹1500</p>
+            <p><strong class="prize">Second Prize:</strong> ₹500</p>
+            <p><strong class="date">DATE & TIME :</strong>Feb 29 2:00 pm-4:00 pm</p>
+            <p><strong>Contact:</strong>Sujith K T - 8943773517</p>
+            <p><strong>Venue:</strong>Software Lab</p>
+  
+            <button class="btt"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfu1ZLX4NbQ6Kujh-MPmA9HoBG9E3gDvKCXEWOR02O2Dqw8YQ/viewform?usp=sf_link">REGISTER NOW</a></button>
+      </div>
+      <div class="card">
+        <img src="images/ctpaper.jpg" >
+        <h2>paper presentation</h2>
+            <p><strong class="reg">Registration Fee:</strong> ₹50/Head</p>
+            <p><strong class="prize">First Prize:</strong> ₹2000</p>
+            <p><strong class="prize">Second Prize:</strong> ₹1000</p>
+            <p><strong class="date">DATE & TIME :</strong>Feb 29 2:00 pm-4:00 pm</p>
+            <p><strong>Contact:</strong>Amal Krishna M A - 8943814333</p>
+            <p><strong>Venue:</strong>S6 CT(118)</p>
+  
+            <button class="btt"><a href="https://docs.google.com/forms/d/e/1FAIpQLScrfMapx-roB1xmrgKDmdMhz7N1BciC5cXlIxQmy_wXiqdeFw/viewform?usp=sf_link">REGISTER NOW</a></button>
+      </div>
+      
+     
+    <!-- Add more cards as needed -->
+
+  </div>
+  <div class="diclaimer">
+    <p class="dic">*Event context may vary from depicted pictures. Thank you for your understanding.</p>
+</div>
+  
+</body>
+</html>
