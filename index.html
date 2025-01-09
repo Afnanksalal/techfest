@@ -1,595 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" type="x-icon" href="assets/img/about/type.jpg">
-    <title>Sreeramatecfest 2K24</title>
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
-    <!-- Icon -->
-    <link rel="stylesheet" type="text/css" href="assets/fonts/line-icons.css">
-    <!-- Slicknav -->
-    <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css">
-    <!-- Nivo Lightbox -->
-    <link rel="stylesheet" type="text/css" href="assets/css/nivo-lightbox.css" >
-    <!-- Animate -->
-    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-    <!-- Main Style -->
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-    <!-- Responsive Style -->
-    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMINOS 2K25</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  </head>
-  <body>
-
-    <!-- Header Area wrapper Starts -->
-    <header >
-      <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        .containers {
-            width: 100%;
-            max-width: 100%;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center;
-            background-size: cover;
-            height: 710px;
-            overflow-y: hidden;
-
-        }
-        
-        #v{
-          font-size: 100px;
-          margin-top: 40px;
-        }
-       #sree{
-        font-size: 29px;
-       }
-       #ah{
-        font-family: 'Josefin Sans', sans-serif;
-       }
-        .inner-div {
-            width: 900px; /* Set the width to 700px */
-            margin: 0 auto; /* Center the inner-div horizontally */
-         
-            padding: 20px;
-            border-radius: 10%;
-            height: 670px;
-            color: white;
-          
-           
-        }
-        .inner-div h1{
-          font-size: 45px;
-        }
-
-       #pic2{
-        
-        max-width: 100%;
-        height: 625px;
-        margin-bottom: 51px;
-        border-radius: 50%;
-        width: 619px;
-        margin-top: -129px;
-        
-       }
-        @media screen and (max-width: 900px) {
-        .inner-div {
-          height: 440px;
-            max-width: 100%; /* Adjust width for smaller screens */
-        }
-        .containers{
-          max-width: 100%;
-          background-size: cover;
-          overflow-x: hidden;
-          height: 470px;
-          
-        }
-       #pic2 {
-            width: 400px;
-            height: 343px;
-            border-radius: 20%;
-            margin-top: -80px;
-        }
-        .pic{
-          width: 50px;
-          height: 50px;
-        }
-        .inner-div h1{
-          font-size: 11px;
-        }
-        #present{
-          font-size: 10px;
-          font-weight: bold;
-        }
-    }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Custom Animated Cursor -->
+    <div class="cursor"></div>
 
-<div class="containers" style="background-image: url('assets/img/slider/slide1.jpg');">
-    <div class="inner-div">
-        <img class="pic wow fadeInUp" src="assets/img/about/ab02450c-d21d-4014-bd0e-b411b7d92161_20240220_162726_0000(1).png" width="100px" height="100px">
-        <h1 id="sree" class=" wow fadeInUp">SREE RAMA GOVT. POLYTECHNIC COLLEGE, THRIPRAYAR.</h1>
-        <p id="present" class=" wow fadeInUp">PRESENTS</p>            
-        <img id="pic2" class="wow bounceIn heading" data-wow-delay="1s" src="assets/img/about/logo-removebg-preview.png" width="400px" height="400px">
-    </div>
-</div>
-
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-content">
+            <h1>LUMINOS 2K25</h1>
+            <p>Presented by Department of Computer Engineering, GPC Perumbavoor</p>
+        </div>
+        <div class="abstract-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
     </header>
-    <!-- Header Area wrapper End -->
 
-    <!-- Coundown Section Start -->
-    <section class="countdown-timer section-padding">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="heading-count">
-              <h2 class="wow fadeInDown" data-wow-delay="0.2s">EVENT STARTS IN </h2>
-              <div class="timer">
-                <script src="https://cdn.logwork.com/widget/countdown.js"></script>
-                <a href="https://logwork.com/countdown-4bsz" class="countdown-timer" data-timezone="Asia/Kolkata" data-date="2024-02-29 20:20">.</a>
-    </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>EVENT STARTS IN</h2>
+            <div id="countdown" class="countdown">
+                <span id="days">00</span> Days
+                <span id="hours">00</span> Hours
+                <span id="minutes">00</span> Minutes
+                <span id="seconds">00</span> Seconds
             </div>
-          </div>
-          
-          </div>
         </div>
-      </div>
+        <div class="animated-background"></div>
+        <div class="trailing-stars" id="trailing-stars"></div>
     </section>
-    <div class="about">
-      <section id="event-slides " class="section-padding" >
-        <div class="container " >
-          <div class="row">
-            <div class="col-12">
-              <div class="section-title-header text-center">
-                <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">About Us</h1>
-               
-              </div>
-            </div >
-            <div class="col-md-6 col-lg-6 col-xs-12 wow fadeInRight" data-wow-delay="0.3s">
-              <div class="video">
-                <img class="img-fluid" src="assets/img/about/college.jpg" alt="" width="600px" height="600px" style="border: 3px solid white; border-radius: 20px;">
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.3s">
-              
-              <h5 id="ah" class="intro-title" style="padding-top: 19px;"><u>INSTITUTION VISION</u></h5>
-              <p class="visionp"> Moulding technically competent and socially responsible professionals. 
-              </p><br>
-              <h5 id="ah" class="intro-title"><u>MISSION</u></h5>
-              <ul class="list">
-                <li> To create an excellent academic ambiance with the state of the art of infrastructure in harmony with sustainable development.</li>
-                <li> To equip the students with social and employable skills and inculcate the habit of lifelong learning.</li>
-            
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-    
-    <!-- Coundown Section End -->
 
-     <!-- Services Section Start -->
-    <section id="services" class="services section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="section-title-header text-center">
-              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">DEPARTMENT VISION</h1>
-             
-            </div>
-          </div>
-        </div>
-        <div class="row services-wrapper">
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-4 col-xs-12 padding-none">
-            <div class="services-item wow fadeInDown" data-wow-delay="0.2s">
-              <div class="services-content">
-                <div class="icon">
-                  <i class="fa-solid fa-computer"></i>
+<!-- About Section -->
+<section class="about-section">
+  <h2>About Us</h2>
+  <div class="about-content">
+      <div class="about-text">
+          <h3><i class="fas fa-eye"></i>Institution Vision</h3>
+          <p>Moulding technically competent and socially responsible professionals.</p>
+      </div>
+      <div class="about-text">
+          <h3><i class="fas fa-bullseye"></i>Mission</h3>
+          <ul>
+              <li><i class="fas fa-check"></i>To create an excellent academic ambiance with state-of-the-art infrastructure in harmony with sustainable development.</li>
+              <li><i class="fas fa-check"></i>To equip students with social and employable skills and inculcate the habit of lifelong learning.</li>
+          </ul>
+      </div>
+      <div class="about-text">
+          <h3><i class="fas fa-laptop-code"></i>Department Vision</h3>
+          <p>Create technically competent and socially responsible computer professionals capable of working in the global environment.</p>
+      </div>
+      <!-- Shapes -->
+      <div class="about-shapes">
+          <div class="shape shape-4"></div>
+          <div class="shape shape-5"></div>
+      </div>
+  </div>
+</section>
+
+    <!-- Counter Section -->
+    <section class="counter-section">
+        <div class="counter-container">
+            <div class="counter-item">
+                <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="counter-text">
+                    <p>GPC Perumbavoor</p>
+                    <span>Aimuri Temple Road, Aimury, Koovappady, Kerala - 683544</span>
                 </div>
-                <h3><a href="">COMPUTER ENGINEERING</a></h3>
-                <p>Create technically competent and socially responsible computer professionals capable of working in the global evironment</p>
-                
-              </div>
             </div>
-          </div>
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-4 col-xs-12 padding-none">
-            <div class="services-item wow fadeInDown" data-wow-delay="0.4s">
-             
-              <div class="services-content">
-                <div class="icon">
-                  <i class="fa-solid fa-building"></i>
+            <div class="counter-item">
+                <div class="icon"><i class="fas fa-clock"></i></div>
+                <div class="counter-text">
+                    <p>February 5 - 6, 2025</p>
+                    <span>09:00 AM – 05:00 PM</span>
                 </div>
-                <h3><a href="">CIVIL ENGINEERING</a></h3>
-                <p>To be a center of excellence in Civil engineering that moulds eminent professionals with due care of societal responsibilities and sense of ethics</p>
-              </div>
             </div>
-          </div>
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-4 col-xs-12 padding-none">
-            <div class="services-item wow fadeInDown" data-wow-delay="0.6s">
-              <div class="icon">
-                <i class="fa-solid fa-gears"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="">MECHANICAL ENGINEERING</a></h3>
-                <p>Shaping technologically proficient and socially responsible mechanical engineering professionals</p>
-              </div>
-            </div>
-          </div>
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-4 col-xs-12 padding-none">
-            <div class="services-item wow fadeInDown" data-wow-delay="0.8s">
-              <div class="icon">
-                <i class="fa-solid fa-plug"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="">ELECTRONICS ENGINEERING</a></h3>
-                <p>To be recognized as the premier center in the field of electronics engineering education that produces technically competent and socially responsible professionals</p>
-              </div>
-            </div>
-          </div>
-           <!-- Services item -->
-          <div class="col-md-6 col-lg-4 col-xs-12 padding-none">
-            <div class="services-item wow fadeInDown" data-wow-delay="1s">
-             
-              <div class="services-content">
-                <i id="v" class="fa-solid fa-eye"></i>
-              </div>
-            </div>
-          </div>
-           <!-- Services item -->
-          <div class="col-md-6 col-lg-4 col-xs-12 padding-none">
-            <div class="services-item wow fadeInDown" data-wow-delay="1.2s">
-              <div class="icon">
-                <i class="fa-solid fa-lightbulb"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="">ELECTRICAL & ELECTRONICS ENGINEERING </a></h3>
-                <p>Moulding technically competent and socially responsible Electrical and Electronics engineers.
-                </p>
-              </div>
-            </div>
-          </div>
-          
         </div>
-      </div>
     </section>
-    <!-- Services Section End -->
-    
 
-    <section class="counter-section section-padding">
-      <div class="container">
-        <div class="row">
-          <!-- Counter Item -->
-          <div class="col-md-6 col-lg-6 col-xs-12 work-counter-widget text-center">
-            <div class="counter wow fadeInRight" data-wow-delay="0.3s">
-              <div class="icon"><i class="lni-map"></i></div>
-              <p>SRGPTC </p>
-              <span>THRIPRAYAR, VALAPAD P O </span>
+    <!-- Events Section -->
+    <section class="events-section">
+        <h2>Events</h2>
+        <div class="events-grid" id="events-grid">
+            <!-- First 3 events -->
+            <div class="event-card">
+                <h3>Project Expo</h3>
+                <p><b>Registration Fee:</b> ₹50/Head</p>
+                <p><b>First Prize:</b> ₹2500</p>
+                <p><b>Second Prize:</b> ₹1500</p>
+                <p><b>Date & Time:</b> FEBRUARY 29, 10:00 AM - 12:00 PM</p>
+                <p><b>Venue:</b> S6 CT(118)</p>
+                <button class="register-btn">REGISTER NOW</button>
             </div>
-          </div>
-          <!-- Counter Item -->
-          <div class="col-md-6 col-lg-6 col-xs-12 work-counter-widget text-center">
-            <div class="counter wow fadeInRight" data-wow-delay="0.6s">
-              <div class="icon"><i class="lni-timer"></i></div>
-              <p>February 29 - March 1, 2024</p>
-              <span>09:00 AM – 05:00 PM</span>
+            <div class="event-card">
+                <h3>Web Designing</h3>
+                <p><b>Registration Fee:</b> ₹50/Head</p>
+                <p><b>First Prize:</b> ₹2000</p>
+                <p><b>Second Prize:</b> ₹1000</p>
+                <p><b>Date & Time:</b> FEBRUARY 29, 12:00 PM - 2:00 PM</p>
+                <p><b>Venue:</b> Software Lab</p>
+                <button class="register-btn">REGISTER NOW</button>
             </div>
-          </div>
-          <!-- Counter Item -->
-          
-          
+            <div class="event-card">
+                <h3>IT Quiz</h3>
+                <p><b>Registration Fee:</b> ₹50/Head</p>
+                <p><b>First Prize:</b> ₹2000</p>
+                <p><b>Second Prize:</b> ₹1000</p>
+                <p><b>Date & Time:</b> FEBRUARY 29, 11:00 AM - 1:00 PM</p>
+                <p><b>Venue:</b> S2 CT(207)</p>
+                <button class="register-btn">REGISTER NOW</button>
+            </div>
         </div>
-      </div>
+        <!-- Down Arrow -->
+        <div class="more-events" id="more-events">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+        <!-- Hidden Events -->
+        <div class="hidden-events" id="hidden-events">
+            <div class="event-card">
+                <h3>Rubik's Cube</h3>
+                <p><b>Registration Fee:</b> ₹50/Head</p>
+                <p><b>First Prize:</b> ₹1500</p>
+                <p><b>Second Prize:</b> ₹500</p>
+                <p><b>Date & Time:</b> MARCH 1, 1:00 PM - 3:00 PM</p>
+                <p><b>Venue:</b> S2 CT(207)</p>
+                <button class="register-btn">REGISTER NOW</button>
+            </div>
+            <div class="event-card">
+                <h3>IPL Auction</h3>
+                <p><b>Registration Fee:</b> ₹250</p>
+                <p><b>First Prize:</b> ₹2500</p>
+                <p><b>Second Prize:</b> ₹1500</p>
+                <p><b>Date & Time:</b> MARCH 1, 9:00 AM - 11:00 AM</p>
+                <p><b>Venue:</b> CCF Lab</p>
+                <button class="register-btn">REGISTER NOW</button>
+            </div>
+            <div class="event-card">
+                <h3>Gaming</h3>
+                <p><b>Registration Fee:</b> ₹100</p>
+                <p><b>First Prize:</b> ₹2000</p>
+                <p><b>Second Prize:</b> ₹1000</p>
+                <p><b>Date & Time:</b> MARCH 1, 10:00 AM - 12:00 PM</p>
+                <p><b>Venue:</b> Software Lab</p>
+                <button class="register-btn">REGISTER NOW</button>
+            </div>
+        </div>
     </section>
- 
-    <!-- About Section Start -->
-    <section id="about" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="section-title-header text-center">
-              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">About Events</h1>
-              
+
+    <!-- Footer Section -->
+    <div class="footer-line"></div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact</h3>
+                <p>Government Polytechnic College Perumbavoor</p>
+                <p><i class="fas fa-phone"></i> +91 0484 264 9251</p>
+                <p><i class="fas fa-envelope"></i> gptcpbvr@gmail.com</p>
+                <p><i class="fas fa-globe"></i> <a href="https://www.gptcperumbavoor.ac.in/"> www.gptcperumbavoor.ac.in</a></p>
             </div>
-          </div>
+            <div class="social-links">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/GPCPerumbavoor/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/GPCPerumbavoor/?igsh=MTl0MzJ5bW9sdnE0ZA%3D%3D"><i class="fab fa-instagram"></i></a>
+            </div>
         </div>
-        <div class="row">
-          <div class="col-xs-12 col-md-6 col-lg-4">
-            <div class="about-item">
-              <a href="ct.html"><img class="img-fluid" src="assets/img/about/image.jpg" alt=""></a>
-              <div class="about-text">
-                <a class="link" href="ct.html"><h3>COMPUTER ENGINEERING</h3></a>
-             
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-6 col-lg-4">
-            <div class="about-item">
-             <a href="civil.html"> <img class="img-fluid" src="assets/img/about/civil.jpg" alt=""></a>
-              <div class="about-text">
-                <a class="link" href="civil.html"><h3>CIVIL ENGINEERING</h3></a>
-                
-                
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-6 col-lg-4">
-            <div class="about-item">
-              <a href="mech.html"><img class="img-fluid" src="assets/img/about/mech.jpg" alt=""></a>
-              <div class="about-text">
-                <a class="link" href="mech.html"><h3>MECHANICAL ENGINEERING</h3></a>
-                
-                
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-6 col-lg-4">
-            <div class="about-item">
-              <a href="el.html"><img class="img-fluid" src="assets/img/about/el.jpg" alt=""></a>
-              <div class="about-text">
-                <a class="link" href="el.html"><h3>ELECTRONICS ENGINEERING</h3></a>
-                
-                
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-6 col-lg-4">
-            <div class="about-item">
-            <a href="eee.html"> <img class="img-fluid" src="assets/img/about/elec.jpg"   alt=""></a>
-              <div class="about-text">
-                <a href="eee.html"><h3>ELECTRICAL & ELECTRONICS ENGINEERING</h3></a>
-               
-                
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-6 col-lg-4">
-            <div class="about-item">
-              <a href="institution.html"><img class="img-fluid" src="assets/img/about/gen.jpg"  alt=""></a>
-              <div class="about-text">
-                <a href="institution.html"><h3>INSTITUTIONAL EVENTS</h3></a>               
-                
-              </div>
-            </div>
-          </div>
-          
+        <div class="copyright">
+            <p>© Designed and Developed by Afnan K Salal (S6 CT)</p>
         </div>
-      </div>
-    </section>
-    <!-- About Section End -->
-
-    <!-- Counter Area Start-->
-    
-    <!-- Counter Area End-->
-
-    <!-- Schedule Section Start -->
-    
-    <!-- Schedule Section End -->
-
-    <!-- Team Section Start -->
-    
-
-    <!-- Gallary Section Start -->
-    
-    <!-- Gallary Section End -->
-
-    <!-- Ask Question Section Start -->
-   
-
-    <!-- Sponsors Section Start -->
-    <!-- Sponsors Section End -->
-
-    <!-- Ticket Pricing Area Start -->
-    
-    
-
-    
-    
-    <!-- Event Slides Section End -->
-
-    <!-- Blog Section Start -->
-    
-    <!-- Blog Section End -->
-
-    <!-- Subscribe Area Start -->
-  
-    <!-- Subscribe Area End -->
-
-    <!-- Map Section Start -->
-    <section id="google-map-area">
-      <div class="container-fluid">
-        <div class="row">
-        </div>
-      </div>
-    </section>
-    <!-- Map Section End -->
-
-    <!-- Contact Us Section -->
-    
-    <!-- Contact Us Section End -->
-
-    <!-- Footer Section Start -->
-    <footer id="footer" class="footer-area section-padding">
-      <div class="container">
-        <div class="row">
-          
-          
-        <style>
-          @media screen and (max-width: 900px) {
-           .map iframe{
-            width:120px ; 
-             height: 120px;
-             
-           }
-           .map{
-            margin-left: -210px;
-            margin-top: 90px;
-           }
-           .widget{
-            margin-left: -85px;
-            margin-top: -130px;
-            font-size: 1px;
-           }
-           #foot2 p{
-            margin-left: -25px;
-           }
-           
-          .footer-social{
-            margin-left: -25px;
-
-          }
-          .widget-title{
-            margin-left: -25px;
-
-          }
-          ul{
-            margin-left: 10px;
-          }
-        }
-
-          #dev{
-            margin-left: -50px;
-          }
-          #foot{
-            margin-top: 5%;
-            display: flex;
-            
-          }
-          #foot h3{
-            margin-right: 10px;
-          }
-          #foot2{
-            margin-top: 5%;
-            margin-left: 230px;
-            margin-top: -30px;
-          }
-          .map iframe{
-            margin-left: 200px;
-            margin-top: -80px;
-          }
-          .footing{
-            width: 300px;
-            height: 300px;
-            margin-left: -210px;
-            margin-top: -80px;
-          }
-          .f h3{
-            margin-left: -150px;
-            margin-top: -80px;
-
-          }
-          .con{
-            color: white;
-            list-style: none;
-          }
-          .developers{
-            width: 200px;
-            height: 200px;
-          }
-          .acin{
-            color: white;
-          }
-          #social{
-            margin-top: 50px;
-          }
-        </style>
-        
-          <div id="foot" class="col-md-6 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.4s">
-            
-            <!-- /.widget -->
-            <div class="map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.0737172394784!2d76.10749377596535!3d10.415719989711985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7f368170f8a53%3A0x8cdce4d5cfda1471!2sSree%20Rama%20Government%20Polytechnic%20College!5e0!3m2!1sen!2sin!4v1708581587283!5m2!1sen!2sin" width="300px" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-
-
-          </div>
-          <div  id="foot2" class="col-md-6 col-lg-3 col-sm- col-xs-12 wow fadeInUp" data-wow-delay="0.4s">
-            <div class="widget">
-              <h5 class="widget-title" id="social">SOCIAL CONNECTION</h5>
-              <ul class="footer-social">
-                <li><a class="facebook" href="https://www.facebook.com/srgptc/"><i class="lni-facebook-filled"></i></a></li>
-                <li><a class="twitter" href="https://www.instagram.com/srgptc/?igsh=MTl0MzJ5bW9sdnE0ZA%3D%3D"><i class="fa-brands fa-instagram"></i></a></li>
-                
-              </ul>
-              <br>
-              <h5 class="widget-title">CONTACT</h5>
-              <p>SRGPTC Thriprayar</p><br>
-              
-                <p ><i class="fa-solid fa-phone"></i> 04872391239</p>
-               <p class="gamil"><i class="fa-regular fa-envelope"></i> srpolyoffice@gmail.com</p>
-               <p class="web"><i class="fa-solid fa-globe"></i> <a class="acin" href="http://sreeramapoly.ac.in/">www.sreeramapoly.ac.in</a> </p>
-           
-            </div>
-
-          </div>
-        </div>
-      </div>
     </footer>
-    <!-- Footer Section End -->
 
-    <div id="copyright">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="site-info">
-              <p>© Designed and Developed by CT Department Students <a  href="https://www.instagram.com/_ntony_m_l?igsh=bnQ5NmI4ZjR3NGE2" rel="nofollow">  🅰   </a>
-                <a  href="https://www.instagram.com/_athidev_k_s_?igsh=MTBsdDB1eDBtbjhxaA==" rel="nofollow">🅰   </a>
-                <a  href="https://www.instagram.com/jstt_ayyoob?igsh=MXVrYWJ2d3V6OHh2Zw==" rel="nofollow">🅰   </a>
-                <a  href="https://www.instagram.com/jishilkrishna?igsh=MXI0anIzeGJiN2Eweg==" rel="nofollow">🅹</a></p>
-            </div>      
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Go to Top Link -->
-    <a href="#" class="back-to-top">
-    	<i class="lni-chevron-up"></i>
-    </a>
-
-    <div id="preloader">
-      <div class="sk-circle">
-        <div class="sk-circle1 sk-child"></div>
-        <div class="sk-circle2 sk-child"></div>
-        <div class="sk-circle3 sk-child"></div>
-        <div class="sk-circle4 sk-child"></div>
-        <div class="sk-circle5 sk-child"></div>
-        <div class="sk-circle6 sk-child"></div>
-        <div class="sk-circle7 sk-child"></div>
-        <div class="sk-circle8 sk-child"></div>
-        <div class="sk-circle9 sk-child"></div>
-        <div class="sk-circle10 sk-child"></div>
-        <div class="sk-circle11 sk-child"></div>
-        <div class="sk-circle12 sk-child"></div>
-      </div>
-    </div>
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="assets/js/jquery-min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery.countdown.min.js"></script>
-    <script src="assets/js/jquery.nav.js"></script>
-    <script src="assets/js/jquery.easing.min.js"></script>
-    <script src="assets/js/wow.js"></script>
-    <script src="assets/js/jquery.slicknav.js"></script>
-    <script src="assets/js/nivo-lightbox.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+    <script src="./assets/js/scripts.js"></script>
+</body>
 </html>
-
