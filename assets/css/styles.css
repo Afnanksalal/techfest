@@ -530,6 +530,8 @@ a {
     .countdown {
         font-size: 24px;
         padding: 8px 16px;
+        margin-left: 20px; /* Added left margin for mobile */
+        margin-right: 20px; /* Added right margin for mobile */
     }
 
    .about-text h3 {
