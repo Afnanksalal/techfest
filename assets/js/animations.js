@@ -77,3 +77,4 @@ const countdown = () => {
 
 // Run the countdown every second
 const countdownInterval = setInterval(countdown, 1000);
+

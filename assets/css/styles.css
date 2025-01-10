@@ -28,7 +28,7 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     color: #fff;
-    background-color: #0a0a0a;
+    background-color: #121212;
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -172,6 +172,8 @@ a {
     font-size: 30px;
     font-family: 'Orbitron', sans-serif;
     animation: pulse 2s infinite;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 @keyframes pulse {
@@ -530,8 +532,8 @@ a {
     .countdown {
         font-size: 24px;
         padding: 8px 16px;
-        margin-left: 20px; /* Added left margin for mobile */
-        margin-right: 20px; /* Added right margin for mobile */
+        margin-left: 25px;
+        margin-right: 25px;
     }
 
    .about-text h3 {
@@ -570,6 +572,31 @@ a {
         align-items: center;
         text-align: center;
     }
+    
+  .form-container {
+        padding: 20px;
+        margin: 20px auto;
+        margin-left: 10px; /* Added uniform left margin */
+        margin-right: 100px; /* Added uniform right margin */
+      }
+       .form-group label {
+         font-size: 14px; /* Adjust font size */
+       }
+    
+  .form-control, .form-select {
+      font-size: 14px;
+      padding: 10px;
+    }
+
+     .file-upload-btn {
+            font-size: 14px; /* Adjust font size */
+             padding: 10px 20px; /* Adjust padding */
+          }
+          
+   #total-price{
+      font-size: 16px;
+    }
+   
 }
 
 /* 4-Card Grid for Larger Screens */
@@ -583,5 +610,190 @@ a {
 @media (pointer: coarse) {
     .cursor {
         display: none;
+    }
+}
+
+/* Form Styles */
+.form-container {
+    max-width: 600px;
+    margin: 20px auto; /* Reduced margin for mobile */
+    background-color: #121212;
+    padding: 20px; /* Reduced padding for mobile */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.form-container h2 {
+    text-align: center;
+    font-size: 28px; /* Adjusted font size for mobile */
+    margin-bottom: 20px; /* Reduced margin for mobile */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #00ffcc;
+}
+
+.form-group {
+    margin-bottom: 15px; /* Uniform margin for all form groups */
+    margin-right: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px; /* Adjusted font size for mobile */
+    margin-bottom: 5px; /* Reduced margin for mobile */
+    color: #ccc;
+}
+
+.form-control, .form-select {
+    width: 100%;
+    padding: 10px; /* Uniform padding for all inputs */
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #00ffcc;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 14px; /* Adjusted font size for mobile */
+    transition: border-color 0.3s ease;
+    -webkit-appearance: none; /* Remove default arrow */
+    -moz-appearance: none; /* Remove default arrow */
+    appearance: none; /* Remove default arrow */
+}
+
+.form-control:focus, .form-select:focus {
+    outline: none;
+    border-color: #00ccaa;
+}
+
+.form-select {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="white"><path d="M7 7l-5 5-1-1 4-4-4-4 1-1 5 5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    z-index: 1;
+}
+
+.btn-submit {
+    background: #00ffcc;
+    color: #1a1a1a;
+    border: none;
+    padding: 10px 20px; /* Uniform padding for button */
+    border-radius: 8px;
+    font-size: 14px; /* Adjusted font size for mobile */
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px; /* Added margin for spacing */
+}
+
+.btn-submit:hover {
+    background: #00ccaa;
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin-top: 10px; /* Uniform margin for upload button */
+}
+
+.file-upload-btn {
+    background: #00ffcc;
+    color: #1a1a1a;
+    border: none;
+    padding: 10px 20px; /* Uniform padding for upload button */
+    border-radius: 8px;
+    font-size: 14px; /* Adjusted font size for mobile */
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+.upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#total-price {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 18px; /* Adjusted font size for mobile */
+    color: #00ffcc;
+}
+
+/* Custom Checkbox */
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 18px; /* Adjusted size for mobile */
+    height: 18px; /* Adjusted size for mobile */
+    border: 2px solid #00ffcc;
+    border-radius: 4px;
+    background-color: #0a0a0a;
+    cursor: pointer;
+    margin-right: 8px; /* Reduced margin for mobile */
+    position: relative;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #00ffcc;
+    border-color: #00ffcc;
+}
+
+input[type="checkbox"]:checked::before {
+    content: "";
+    position: absolute;
+    top: 42%; /* Adjust for more centered tick */
+    left: 48%; /* Adjust for more centered tick */
+    transform: translate(-50%, -50%) rotate(-45deg) scale(1);
+    border: solid #1a1a1a;
+    border-width: 0 2px 2px 0;
+    padding: 3px; /* Adjust for tick size */
+}
+
+/* Media Queries for Mobile and Tablet */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 15px; /* Further reduced padding for smaller screens */
+    }
+
+    .form-container h2 {
+        font-size: 24px; /* Further reduced font size for smaller screens */
+        margin-bottom: 15px; /* Further reduced margin for smaller screens */
+    }
+
+    .form-group {
+        margin-bottom: 10px; /* Further reduced margin for smaller screens */
+    }
+
+    .form-group label {
+        font-size: 16px; /* Further reduced font size for smaller screens */
+        margin-bottom: 5px; /* Further reduced margin for smaller screens */
+    }
+
+    .form-control, .form-select {
+        padding: 8px; /* Further reduced padding for smaller screens */
+        font-size: 16px; /* Further reduced font size for smaller screens */
+    }
+
+    .btn-submit, .file-upload-btn {
+        padding: 8px 16px; /* Further reduced padding for smaller screens */
+        font-size: 16px; /* Further reduced font size for smaller screens */
+    }
+
+    #total-price {
+        font-size: 20px; /* Further reduced font size for smaller screens */
+    }
+
+    input[type="checkbox"] {
+        width: 16px; /* Further reduced size for smaller screens */
+        height: 16px; /* Further reduced size for smaller screens */
+        margin-right: 6px; /* Further reduced margin for smaller screens */
     }
 }

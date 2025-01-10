@@ -3,6 +3,10 @@
       {
         "source": "/",
         "destination": "/index.html" 
+      },
+      {
+        "source": "/register",
+        "destination": "/register.html" 
       }
     ]
   }
