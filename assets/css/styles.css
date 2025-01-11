@@ -168,21 +168,53 @@ a {
 .countdown {
     display: inline-block;
     background: rgba(0, 0, 0, 0.7);
+    color: #00ffcc;
     padding: 10px 20px;
     border-radius: 12px;
     font-size: 30px;
     font-family: 'Orbitron', sans-serif;
-    animation: pulse 2s infinite;
+    animation: pulse 2s infinite, glowCountdown 2s infinite alternate, dimming 3s infinite ease-in-out; /* added glowCountdown animation */
     margin-left: 0;
     margin-right: 0;
 }
 
+
+.countdown {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.7);
+    color: #00ffcc;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-size: 30px;
+    font-family: 'Orbitron', sans-serif;
+    animation: pulse 2s infinite,  dimming 3s infinite ease-in-out;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.countdown {
+    text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc;
+     animation: pulse 2s infinite, dimming 3s infinite ease-in-out, glowText 2s infinite alternate;
+}
+
+
+@keyframes glowText {
+    0% {
+    text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc;
+    }
+    100% {
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+    }
+}
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.05); }
     100% { transform: scale(1); }
 }
-
+@keyframes dimming {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+}
 .animated-background {
     position: absolute;
     top: 0;
@@ -215,13 +247,15 @@ a {
 
 .comet {
     position: absolute;
-    width: 4px;
-    height: 4px;
+    width: 6px;
+    height: 6px;
     background: #00ffcc;
     border-radius: 50%;
     box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
     animation: cometTrail linear infinite;
 }
+
+
 
 @keyframes starTrail {
   0% { transform: translateY(0) translateX(0); opacity: 1; }
@@ -229,8 +263,15 @@ a {
 }
 
 @keyframes cometTrail {
-    0% { transform: translateY(0) translateX(0); opacity: 1; }
-     100% { transform: translateY(100vh) translateX(calc(-100% + 100vw)); opacity: 0; }
+    0% { transform: translateY(0) translateX(0); opacity: 1;  
+          width: 8px; height: 8px; /* Initial comet size */
+    }
+    50% {  transform: translateY(50vh) translateX(calc(-50% + 50vw));
+          width: 4px; height: 4px; /* Reduce comet size half way */
+        }
+     100% { transform: translateY(200vh) translateX(calc(-200% + 200vw)); opacity: 0;
+           width: 1px; height: 1px; /* Reduce comet size at the end */
+    }
 }
 
 /* About Section */
@@ -324,7 +365,7 @@ a {
     position: absolute;
     top: 10%;
     left: 10%;
-    animation: float 8s infinite ease-in-out;
+    animation: float 5s infinite ease-in-out;
 }
 
 .shape-5 {
@@ -335,12 +376,12 @@ a {
     position: absolute;
     bottom: 10%;
     right: 10%;
-    animation: float 10s infinite ease-in-out;
+    animation: float 5s infinite ease-in-out;
 }
 
 @keyframes float {
     0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
+    20% { transform: translateY(-40px); }
 }
 /* Events Section */
 .events-section {
