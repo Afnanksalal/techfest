@@ -40,8 +40,8 @@ a {
 
 /* Custom Animated Cursor */
 .cursor {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     border: 2px solid #00ffcc;
     border-radius: 50%;
     position: absolute;
@@ -50,7 +50,7 @@ a {
     animation: cursorAnim 0.5s infinite alternate;
     z-index: 1000;
     background: rgba(0, 255, 204, 0.1);
-    transition: transform 0.2s ease, width 0.2s ease, height 0.2s ease; /* Added smooth transitions */
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease; /* Added smooth transitions */
 }
 
 @keyframes cursorAnim {
