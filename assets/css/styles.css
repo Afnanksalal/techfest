@@ -38,19 +38,20 @@ a {
     color: #fff;
 }
 
-/* Custom Animated Cursor */
+/* Custom Cursor */
 .cursor {
     width: 25px;
     height: 25px;
     border: 2px solid #00ffcc;
     border-radius: 50%;
-    position: absolute;
+    position: fixed; /* Changed to fixed */
     pointer-events: none;
     transform: translate(-50%, -50%);
     animation: cursorAnim 0.5s infinite alternate;
     z-index: 1000;
     background: rgba(0, 255, 204, 0.1);
     transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease; /* Added smooth transitions */
+    will-change: transform; /* Optimize performance */
 }
 
 @keyframes cursorAnim {
