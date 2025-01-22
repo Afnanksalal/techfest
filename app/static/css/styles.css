@@ -857,8 +857,8 @@ input[type="checkbox"]:checked::before {
     padding: 10px; /* Add padding for better spacing */
 }
 
-/* Event Card */
-.event-card {
+/* Form Event Card */
+.form-event-card {
     position: relative;
     background: rgba(0, 0, 0, 0.3);
     border: 2px solid #00ffcc;
@@ -874,48 +874,48 @@ input[type="checkbox"]:checked::before {
     text-align: center;
 }
 
-.event-card:hover {
+.form-event-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 255, 204, 0.3);
     border-color: #00ccaa;
 }
 
-.event-card input[type="checkbox"] {
+.form-event-card input[type="checkbox"] {
     position: absolute;
     opacity: 0;
     width: 0;
     height: 0;
 }
 
-.event-content {
+.form-event-card .event-content {
     text-align: center;
 }
 
-.event-content h3 {
+.form-event-card .event-content h3 {
     font-size: 16px; /* Smaller font size */
     margin: 0 0 5px; /* Reduced margin */
     color: #00ffcc;
 }
 
-.event-content p {
+.form-event-card .event-content p {
     font-size: 12px; /* Smaller font size */
     color: #ccc;
     margin: 0 0 5px; /* Reduced margin */
 }
 
-.event-content .price {
+.form-event-card .event-content .price {
     font-size: 14px; /* Smaller font size */
     font-weight: bold;
     color: #00ffcc;
 }
 
 /* Checked State */
-.event-card input[type="checkbox"]:checked + .event-content {
+.form-event-card input[type="checkbox"]:checked + .event-content {
     background: rgba(0, 255, 204, 0.1);
     border-radius: 12px;
 }
 
-.event-card input[type="checkbox"]:checked + .event-content::before {
+.form-event-card input[type="checkbox"]:checked + .event-content::before {
     content: "✓";
     position: absolute;
     top: 5px; /* Adjusted position */
@@ -933,7 +933,7 @@ input[type="checkbox"]:checked::before {
 }
 
 /* Animation for Checked State */
-.event-card input[type="checkbox"]:checked + .event-content {
+.form-event-card input[type="checkbox"]:checked + .event-content {
     animation: pulse 0.5s ease;
 }
 
@@ -951,20 +951,20 @@ input[type="checkbox"]:checked::before {
         max-height: 300px; /* Smaller height for mobile */
     }
 
-    .event-card {
+    .form-event-card {
         height: 100px; /* Shorter height for mobile */
         padding: 10px; /* Reduced padding for mobile */
     }
 
-    .event-content h3 {
+    .form-event-content h3 {
         font-size: 14px; /* Smaller font size for mobile */
     }
 
-    .event-content p {
+    .form-event-content p {
         font-size: 10px; /* Smaller font size for mobile */
     }
 
-    .event-content .price {
+    .form-event-content .price {
         font-size: 12px; /* Smaller font size for mobile */
     }
 }
