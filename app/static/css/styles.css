@@ -852,9 +852,9 @@ input[type="checkbox"]:checked::before {
     grid-template-columns: repeat(3, 1fr); /* 3 cards in a row for desktop */
     gap: 10px; /* Reduced gap between cards */
     margin-top: 15px;
-    max-height: 400px; /* Fixed height for scrollable container */
     overflow-y: auto; /* Enable vertical scrolling */
     padding: 10px; /* Add padding for better spacing */
+    margin-right: 0px;
 }
 
 /* Form Event Card */
@@ -872,6 +872,7 @@ input[type="checkbox"]:checked::before {
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin: 0; /* Remove any default margins */
 }
 
 .form-event-card:hover {
