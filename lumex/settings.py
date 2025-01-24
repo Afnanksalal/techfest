@@ -134,4 +134,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CSRF_TRUSTED_ORIGINS = [
     'https://8000-afnanksalal-techfest-xrc9oi9cnwz.ws-us117.gitpod.io',
+    'https://lumex.onrender.com/',
 ]
