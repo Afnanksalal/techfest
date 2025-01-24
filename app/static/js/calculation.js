@@ -45,3 +45,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initial calculation
     calculateTotalPrice();
 });
+
+document.getElementById('screenshot').addEventListener('change', function(e) {
+    const fileName = document.getElementById('file-name');
+    if (this.files.length > 0) {
+        fileName.textContent = this.files[0].name;
+    } else {
+        fileName.textContent = 'No file chosen';
+    }
+});
