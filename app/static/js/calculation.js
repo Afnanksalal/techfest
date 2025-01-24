@@ -31,9 +31,10 @@ document.addEventListener('DOMContentLoaded', () => {
             total += workshopCount * workshopPrice;
         }
 
-        // Update the total price in the DOM
+        // Update the total price in the DOM and hidden input field
         if (totalPriceElement) {
             totalPriceElement.textContent = `Total Price: ₹${total}`;
+            document.getElementById('total-amount').value = total;  // Set the hidden input value
         }
     }
 

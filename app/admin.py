@@ -4,6 +4,33 @@ from django.http import HttpResponse
 from openpyxl import Workbook
 from .models import Registration
 
+def calculate_total_amount(events_list):
+    """
+    Calculate total price with workshop discounts (matches JavaScript logic).
+    """
+    workshop_price = 300
+    competition_price = 30
+    workshop_discount_threshold = 3
+    workshop_discount_total = 750
+
+    workshop_count = 0
+    competition_count = 0
+
+    for event in events_list:
+        if event.startswith("workshop"):
+            workshop_count += 1
+        elif event.startswith("competition"):
+            competition_count += 1
+
+    # Apply workshop discount
+    if workshop_count >= workshop_discount_threshold:
+        workshop_total = workshop_discount_total
+    else:
+        workshop_total = workshop_count * workshop_price
+
+    competition_total = competition_count * competition_price
+    return workshop_total + competition_total
+
 def export_to_excel(modeladmin, request, queryset):
     """
     Custom admin action to export selected records to an Excel file.
@@ -23,6 +50,7 @@ def export_to_excel(modeladmin, request, queryset):
         "Email",
         "Events",
         "Payment Screenshot",
+        "Total Amount",
     ]
     ws.append(headers)
 
@@ -37,6 +65,7 @@ def export_to_excel(modeladmin, request, queryset):
             registration.email,
             registration.events,
             registration.payment_screenshot.url if registration.payment_screenshot else "No Image",
+            registration.total_amount,
         ]
         ws.append(row)
 
@@ -64,8 +93,17 @@ class RegistrationAdmin(admin.ModelAdmin):
         "email",
         "events_preview",
         "payment_preview",
+        "total_amount",  # Display total amount in the list view
     )
     actions = [export_to_excel]  # Add the custom action here
+
+    def save_model(self, request, obj, form, change):
+        """
+        Calculate total amount using the same logic as the JavaScript.
+        """
+        events_list = obj.events.split(", ")  # Split stored events string
+        obj.total_amount = calculate_total_amount(events_list)
+        super().save_model(request, obj, form, change)
 
     def events_preview(self, obj):
         return obj.events[:50] + "..." if len(obj.events) > 50 else obj.events

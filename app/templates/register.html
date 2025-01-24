@@ -190,6 +190,7 @@
                 </div>
             </div>
             <div id="total-price">Total Price: ₹0</div>
+            <input type="hidden" id="total-amount" name="total_amount" value="0">
             <button type="submit" class="btn-submit">Register</button>
         </form>
     </div>
@@ -219,16 +220,5 @@
     <!-- Scripts -->
     <script src="{% static 'js/animations.js' %}"></script>
     <script src="{% static 'js/calculation.js' %}"></script>
-    <script>
-        // File upload display script
-        document.getElementById('screenshot').addEventListener('change', function(e) {
-            const fileName = document.getElementById('file-name');
-            if (this.files.length > 0) {
-                fileName.textContent = this.files[0].name;
-            } else {
-                fileName.textContent = 'No file chosen';
-            }
-        });
-    </script>
 </body>
 </html>

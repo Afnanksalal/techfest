@@ -1,16 +1,16 @@
 from django.db import models
+import os
 from django.utils import timezone
 import re
-import os
 
 def custom_filename(instance, filename):
     """
-    Generates a custom filename for uploaded payment screenshots.
+    Generate a custom filename for uploaded payment screenshots.
     Format: name_college_branch_timestamp.extension
     """
     # Clean and format fields
     name = re.sub(r'[^a-zA-Z0-9_]', '', instance.name.replace(' ', '_'))
-    college = re.sub(r'[^a-zA-Z00-9_]', '', instance.college.replace(' ', '_'))
+    college = re.sub(r'[^a-zA-Z0-9_]', '', instance.college.replace(' ', '_'))
     branch = re.sub(r'[^a-zA-Z0-9_]', '', instance.branch.replace(' ', '_'))
     timestamp = timezone.now().strftime("%Y%m%d_%H%M%S")
     ext = os.path.splitext(filename)[1]  # Get the file extension
@@ -26,17 +26,15 @@ class Registration(models.Model):
     branch = models.CharField(max_length=50, verbose_name="Branch")
     phone = models.CharField(max_length=15, verbose_name="Phone Number")
     email = models.EmailField(verbose_name="Email Address")
-    events = models.TextField(verbose_name="Selected Events")
-    payment_screenshot = models.ImageField(
-        upload_to=custom_filename,
-        verbose_name="Payment Screenshot"
-    )
+    events = models.TextField(verbose_name="Selected Events")  # Store selected events as a comma-separated string
+    payment_screenshot = models.ImageField(upload_to=custom_filename, verbose_name="Payment Screenshot")
+    total_amount = models.DecimalField(max_digits=10, decimal_places=2, default=0.00, verbose_name="Total Amount (₹)")
 
     def __str__(self):
         """
         String representation of the model.
         """
-        return f"{self.name} - {self.college} ({self.year} Year)"
+        return f"{self.name} - {self.college}"
 
     class Meta:
         verbose_name = "Event Registration"
