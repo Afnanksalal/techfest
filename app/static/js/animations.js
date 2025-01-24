@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Countdown Timer
   const countdown = () => {
-    const eventDate = new Date('February 5, 2025 09:00:00').getTime();
+    const eventDate = new Date('February 11, 2025 09:00:00').getTime();
     const now = new Date().getTime();
     const timeLeft = eventDate - now;
 

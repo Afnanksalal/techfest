@@ -949,7 +949,6 @@ input[type="checkbox"]:checked::before {
     .event-grid {
         grid-template-columns: 1fr; /* 1 card per row */
         gap: 8px; /* Smaller gap for mobile */
-        max-height: 450px; /* Smaller height for mobile */
     }
 
     .form-event-card {
