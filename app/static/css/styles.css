@@ -639,6 +639,9 @@ a {
       font-size: 16px;
     }
    
+    #info{
+        font-size: 13px;
+      }
 }
 
 /* 4-Card Grid for Larger Screens */
@@ -774,6 +777,12 @@ a {
     color: #00ffcc;
 }
 
+#info {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 15px; /* Adjusted font size for mobile */
+}
+
 /* Custom Checkbox */
 input[type="checkbox"] {
     -webkit-appearance: none;
@@ -837,6 +846,9 @@ input[type="checkbox"]:checked::before {
 
     #total-price {
         font-size: 20px; /* Further reduced font size for smaller screens */
+    }
+    #info {
+        font-size: 15px; /* Further reduced font size for smaller screens */
     }
 
     input[type="checkbox"] {
